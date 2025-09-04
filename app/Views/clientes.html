@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitnesShop - Clientes</title>
+  <!-- CDN de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family:  Arial, sans-serif;
+      background: #f5f6fa;
+    }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100%;
+      background: #fff;
+      border-right: 1px solid #ddd;
+      padding: 20px 0;
+    }
+    .sidebar h2 {
+      text-align: center;
+      color: #ff9800;
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar ul li {
+      padding: 12px 20px;
+      cursor: pointer;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sidebar ul li i {
+      width: 20px;
+      text-align: center;
+    }
+    .sidebar ul li:hover, 
+    .sidebar ul li.active {
+      background: #e8f0fe;
+      font-weight: bold;
+    }
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .topbar .logout {
+      background: #eee;
+      padding: 8px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .blue { background: #0d47a1; }
+    .orange { background: #ff9800; }
+    .lightblue { background: #64b5f6; }
+    .red { background: #f44336; }
+    .content {
+      display: flex;
+      margin-top: 30px;
+      gap: 20px;
+    }
+    .clientes, .notificaciones {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table th, table td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    .notificaciones div {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>FITNES<span style="color:#000">SHOP</span></h2>
+    <ul>
+       <li>
+  <a href="Inicio.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-home"></i> Inicio
+  </a>
+</li>
+      <li class="active"><i class="fa fa-users"></i> Clientes</li>
+    <li>
+  <a href="Plan de entrenamiento.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-dumbbell"></i> Planes de entrenamiento
+  </a>
+</li>
+     <li>
+  <a href="productos.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-box"></i> Productos
+  </a>
+</li>
+    <li>
+  <a href="Reservas.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-book"></i> Reservas
+  </a>
+</li>
+          <li>
+  <a href="Reportes.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-chart-line"></i> Reportes
+  </a>
+</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <h1>Clientes</h1>
+      <div class="logout">Log out</div>
+    </div>
+
+    <div class="cards">
+      <div class="card blue">55<br><small>Total de clientes</small></div>
+      <div class="card orange">25<br><small>Nuevos clientes este mes</small></div>
+      <div class="card lightblue">15<br><small>Clientes activos hoy</small></div>
+      <div class="card red">5<br><small>Clientes con membresía vencida</small></div>
+    </div>
+
+    <div class="content">
+      <div class="clientes">
+        <h2>Clientes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Correo</th>
+              <th>Teléfono</th>
+              <th>Estado de membresía</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Juan Pérez</td>
+              <td>juan.perez@email.c</td>
+              <td>(555) 123-4567</td>
+              <td>Activa</td>
+            </tr>
+            <tr>
+              <td>María Gómez</td>
+              <td>maria.gomez@email</td>
+              <td>(555) 887-5543</td>
+              <td>Vencida</td>
+            </tr>
+            <tr>
+              <td>Carlos Ramírez</td>
+              <td>carlos.ramirez@em</td>
+              <td>(555) 234-5678</td>
+              <td>Activa</td>
+            </tr>
+            <tr>
+              <td>Laura Torres</td>
+              <td>laura.torres@email</td>
+              <td>(555) 976-5432</td>
+              <td>Vencida</td>
+            </tr>
+            <tr>
+              <td>Javier López</td>
+              <td>javierLopez@email</td>
+              <td>(555) 345-6789</td>
+              <td>Activa</td>
+            </tr>
+            <tr>
+              <td>Sofía Sánchez</td>
+              <td>sofia.sanchez@eme</td>
+              <td>(555) 785-4321</td>
+              <td>01/04/2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="notificaciones">
+        <h2>Notificaciones</h2>
+        <div>Juan Pérez ha actualizado su información de contacto <small>(hoy)</small></div>
+        <div>María Gómez ha cancelado su inscripción <small>(ayer)</small></div>
+        <div>Carlos Ramírez ha renovado su membresía <small>(2 días)</small></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

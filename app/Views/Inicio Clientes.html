@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitnesShop - Historia</title>
+  <!-- Enlace a FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      font-size: 18px;
+    }
+
+    /* Barra lateral */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 260px;
+      height: 100%;
+      background-color: white;
+      border-right: 1px solid #ddd;
+      padding-top: 30px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      font-size: 26px;
+      color: #ff6600;
+      margin-bottom: 50px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 25px 0;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 18px;
+      color: #333;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .sidebar ul li:hover {
+      background-color: #f0f0f0;
+    }
+
+    .sidebar ul li i {
+      margin-right: 15px;
+      font-size: 20px;
+      color: #444;
+    }
+
+    /* Estado activo */
+    .sidebar ul li.active {
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+    }
+
+    .sidebar ul li.active i {
+      color: white;
+    }
+
+    /* Contenido principal */
+    .main {
+      margin-left: 280px;
+      padding: 30px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 {
+      color: black;
+      font-size: 32px;
+    }
+
+    .logout {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .logout img {
+      width: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      margin-top: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      font-size: 18px;
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 140px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .info {
+      margin-top: 15px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .faq {
+      margin-top: 25px;
+    }
+
+    .faq ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .faq ul li {
+      margin: 10px 0;
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra lateral -->
+  <div class="sidebar">
+    <h2>FITNES<span style="color:#000;">SHOP</span></h2>
+    <ul>
+      <li class="active"><i class="fa fa-home"></i> Inicio</li>
+      <li>
+        <a href="Plan de entrenamiento clientes.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+          <i class="fa fa-dumbbell"></i> Planes de entrenamiento
+        </a>
+      </li>
+      <li>
+        <a href="Productos clientes.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+          <i class="fa fa-box"></i> Productos
+        </a>
+      </li>
+      <li>
+        <a href="Reservas cliente.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+          <i class="fa fa-calendar-check"></i> Reservas
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="main">
+    <div class="header">
+      <h1>Historia</h1>
+      <div class="logout">
+        Log out
+      </div>
+    </div>
+
+    <div class="card">
+      <p>
+        No vendemos pesas, proteínas o ropa deportiva. Vendemos la herramienta para que construyas tu disciplina. 
+        Vendemos el combustible para que superes tus límites. Vendemos la armadura para que enfrentes cada reto con confianza. 
+        Esta tienda nació de una idea simple: todos merecemos el apoyo para ser más fuertes, por dentro y por fuera. 
+        Cada producto en nuestros estantes ha sido seleccionado para ayudarte a dar un paso más en tu viaje.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Fotos del lugar</h2>
+      <div class="gallery">
+        <img src="https://st2.depositphotos.com/3386033/5304/i/450/depositphotos_53041219-stock-photo-modern-gym-interior-with-various.jpg" alt="foto1">
+        <img src="https://www.2playbook.com/uploads/s1/30/44/65/synergym-ponferrada-technogym-1.png" alt="foto2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEzwAYAPVA1hwFmkQiex7rGrUVjJSzeMKGMw&s.jpg" alt="foto3">
+      </div>
+      <div class="info">
+        <i class="fa fa-map-marker-alt"></i> 7A Calle, Cdad. de Guatemala <br>
+        <i class="fa fa-envelope"></i> xxxx@xxxxxxxxxx.gmail.com <br>
+        <i class="fa fa-phone"></i> +000 0000 0000
+      </div>
+    </div>
+
+    <div class="card faq">
+      <h2>Preguntas frecuentes</h2>
+      <ul>
+        <li>Formas de pago</li>
+        <li>Mensualidad</li>
+        <li>Calidad</li>
+        <li>Maquinaria</li>
+        <li>Horarios</li>
+      </ul>
+    </div>
+
+    <footer>
+      © 2025 Empresa Fitness. Todos los derechos reservados a <b>Andy Mata</b>.
+    </footer>
+  </div>
+</body>
+</html>

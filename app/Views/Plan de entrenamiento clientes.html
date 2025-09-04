@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes de Entrenamiento</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 220px;
+      height: 100vh;
+      background: #fff;
+      border-right: 1px solid #ddd;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      padding: 0 20px 20px 20px;
+    }
+
+    .logo .fitness {
+      color: orange;
+    }
+
+    .logo .shop {
+      color: black;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: #333;
+      transition: background 0.2s;
+      font-size: 16px;
+    }
+
+    .menu li:hover {
+      background: #f0f0f0;
+    }
+
+    .menu li.active {
+      background: #e6f0ff;
+      color: #007bff;
+      font-weight: bold;
+      border-left: 4px solid #007bff;
+    }
+
+    .menu li i {
+      margin-right: 12px;
+      font-size: 18px;
+    }
+
+    .content {
+      margin-left: 240px;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+    }
+
+    .logout {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .logout img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .card p {
+      margin: 10px 0;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <span class="fitness">FITNES</span><span class="shop">SHOP</span>
+    </div>
+    <ul class="menu">
+    <li>
+  <a href="Inicio Clientes.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-home"></i> Inicio
+  </a>
+</li>
+      <li class="active"><i class="fa fa-book"></i> Planes de entrenamiento</li>
+      <li>
+  <a href="Productos clientes.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-box"></i> Productos
+  </a>
+</li>
+      <li>
+  <a href="Reservas cliente.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-clock"></i> Reservas
+  </a>
+</li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="header">
+      <h1>Planes de entrenamiento</h1>
+      <div class="logout">
+        <span>Log out</span>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwPoentHB9uz0_mRM4K4SmuFbjcCSnVzxxqw&s.jpg" alt="Zumba">
+        <p>Zumba</p>
+      </div>
+      <div class="card">
+        <img src="https://i.blogs.es/da6e86/istock-1448297445/1366_2000.jpeg" alt="Entrenamiento de cuádriceps">
+        <p>Entrenamiento de cuádriceps</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzZHrlrk0fiJHKbCYFISh-FvtMqj0tJlb5L97PYzc3-0F338CrGIJmPpQjjrCilhlbHZU&usqp=CAU.jpg" alt="Pérdida de grasa">
+        <p>Pérdida de grasa</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXauPRl1m21JfBMxvMbv3bzMJwTFdIMJ_3mQ&s.jpg" alt="Boxeo">
+        <p>Boxeo</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIjpeX1j8QzMbjHz2CeG5rIaIoD7MyJwz5Gw&s.jpg" alt="Entrenamientos para mujeres">
+        <p>Entrenamientos para mujeres</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLeG0v9RPXp_D6IVfSQ43_KtzIUKW-O3S0g&s.jpg" alt="Desarrollo muscular">
+        <p>Desarrollo muscular</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScj9g-_pFyssYLjL8zGq14ePMnNbUR-q3BBQ&s.jpg" alt="Crossfit">
+        <p>Crossfit</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-t-0YRDG1SHN9wvzvRTmImNdDVHPWyZFhsA&s.jpg" alt="Spinning">
+        <p>Spinning</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPXeuVhOMAaHSxZ3YvKVS62x1nG8VciQ-mOA&s.jpg" alt="Ejercicios abdominales">
+        <p>Ejercicios abdominales</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR3fxvgNhInESyQOuDxOwM_pciAkUA6ZKN5A&s.jpg" alt="Cardio">
+        <p>Cardio</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKQNGlz8UWQ_P32n8C1Q3t0XuAkC48vbgTkg&s.jpg" alt="Calistenia">
+        <p>Calistenia</p>
+      </div>
+      <div class="card">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/man-and-woman-doing-yoga-stretch-in-a-gym-royalty-free-image-479760469-1540325200.jpg" alt="Yoga">
+        <p>Yoga</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

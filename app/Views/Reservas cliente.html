@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitnessShop - Reservas</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      height: 100vh;
+      background: #fff;
+      border-right: 1px solid #ddd;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 20px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .logo span {
+      color: orange;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 15px;
+      color: #333;
+    }
+    .sidebar ul li.active {
+      background: #e9f0ff;
+      border-left: 4px solid #0066ff;
+      color: #0066ff;
+    }
+    .sidebar ul li i {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    /* Main */
+    .main {
+      margin-left: 240px;
+      padding: 20px;
+    }
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .logout {
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .logout i {
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin: 20px 0;
+    }
+
+    /* Grid de reservas */
+    .reservas {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 12px;
+    }
+    .card-content p {
+      font-size: 14px;
+      margin: 8px 0;
+      color: #333;
+    }
+    .disponible {
+      color: green;
+      font-weight: bold;
+    }
+    .no-disponible {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo"><span>FITNESS</span>SHOP</div>
+    <ul>
+      <li>
+  <a href="Inicio Clientes.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-home"></i> Inicio
+</li>
+      <li>
+  <a href="Plan de entrenamiento clientes.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-clipboard"></i> Planes de entrenamiento
+  </a>
+</li>
+      <li>
+  <a href="Productos clientes.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-box"></i> Productos
+  </a>
+</li>
+      <li class="active"><i class="fa fa-calendar-alt"></i> Reservas</li>
+    </ul>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="topbar">
+      <div class="logout"><i class="fa fa-user-circle"></i> Log out</div>
+    </div>
+    <h1>Reservas</h1>
+
+    <div class="reservas">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK_A7lkSz-G-S_zzslc8F4FtJRyqrgKd5OX2LJSd4cWfrXykhavIPIANJFPHH-VPRVgZw&usqp=CAU.jpg" alt="">
+        <div class="card-content">
+          <p>Clases de Zumba Lunes de 12 pm a 5 pm</p>
+          <p class="disponible">Disponible</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGi1vwUJuHLI1WZ7pGtm5W1KN8ow8sebHh_w&s.jpg" alt="">
+        <div class="card-content">
+          <p>Clases de Spinning Martes de 11 am a 5 pm</p>
+          <p class="no-disponible">No Disponible</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw5YeiPJVyqdfIOZyfoSCwfPfbPnAdEss4cA&s.jpg" alt="">
+        <div class="card-content">
+          <p>Clases de Boxeo Miércoles de 12 pm a 6 pm</p>
+          <p class="disponible">Disponible</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUcXLWHJ1PLbDWZxg2YV4b14YPFmEgGdY9RQ&s.jpg" alt="">
+        <div class="card-content">
+          <p>Clases de Yoga Jueves de 9 am a 12 pm</p>
+          <p class="disponible">Disponible</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzfLh9Zo4cd2nNfyJFAso4HyvhZv4L-l2VMQ&s.jpg" alt="">
+        <div class="card-content">
+          <p>Clases de Crossfit Viernes de 1 pm a 4 pm</p>
+          <p class="no-disponible">No Disponible</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_ywG7P61yJ909bjHYHe59Rv7q8C6Kv5FFhvco-Fc7LVH52ug4vwoDb4JDBfQInnV2JQ&usqp=CAU.jpg" alt="">
+        <div class="card-content">
+          <p>Zona de Calistenia Sábado de 10 am a 3 pm</p>
+          <p class="no-disponible">No Disponible</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQip5olZaazkLEpNLeiFZ65spB4fkGiNBd76ScvnyjNgvLWPUqyGV5_4ESIUb8lqznkyHs&usqp=CAU.jpg" alt="">
+        <div class="card-content">
+          <p>Zona de ejercicios abdominales Domingo de 2 pm a 6 pm</p>
+          <p class="disponible">Disponible</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoKTo0iCvPh_jk6VivTC-GCNsZOGf9KZLgf4royrJ_WT3MRa0lQ6xUuIXB6kB9DZEqICw&usqp=CAU.jpg" alt="">
+        <div class="card-content">
+          <p>Zona de Desarrollo Muscular Lunes de 12 pm a 4 pm</p>
+          <p class="no-disponible">No Disponible</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Shop - Registro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      background: #fff;
+      padding: 80px;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      max-width: 1200px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      border-radius: 20px;
+    }
+
+    /* Caja de registro */
+    .register-box {
+      border: 3px solid #333;
+      padding: 50px;
+      text-align: center;
+      width: 400px;
+      border-radius: 10px;
+      background: #fafafa;
+    }
+
+    .register-box img {
+      width: 120px;
+      margin-bottom: 25px;
+    }
+
+    .register-box h2 {
+      margin: 10px 0;
+      font-size: 32px;
+    }
+
+    .register-box input {
+      width: 95%;
+      padding: 12px;
+      margin: 12px 0;
+      border: 1px solid #555;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .register-box button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      background: #ff9800;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .register-box button:hover {
+      background: #e68900;
+    }
+
+    /* Logo y slogan */
+    .logo-box {
+      text-align: center;
+      flex: 1;
+    }
+
+    .logo-box img {
+      width: 350px;
+      margin-bottom: 20px;
+    }
+
+    .logo-box h1 {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+
+    .logo-box span.orange {
+      color: #ff9800;
+      font-weight: bold;
+    }
+
+    .logo-box span.black {
+      color: #111;
+      font-weight: bold;
+    }
+
+    .logo-box p {
+      font-size: 20px;
+      margin-top: 5px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Caja de Registro -->
+    <div class="register-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="User Icon">
+      <h2>Registro</h2>
+      <form>
+        <input type="text" placeholder="Nombre completo" required><br>
+        <input type="email" placeholder="Correo electrónico" required><br>
+        <input type="text" placeholder="Usuario" required><br>
+        <input type="password" placeholder="Contraseña" required><br>
+        <input type="password" placeholder="Confirmar contraseña" required><br>
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+
+    <!-- Logo y slogan -->
+    <div class="logo-box">
+      <img src="C:\Users\andyn\Pictures\Screenshots\Captura de pantalla 2025-09-01 105715.png" alt="Logo Fitness">
+      <h1>
+        <span class="orange">FITNESS</span><span class="black">SHOP</span>
+      </h1>
+      <p>Tu energía, Tu estilo, Tu mejor versión</p>
+    </div>
+  </div>
+</body>
+</html>

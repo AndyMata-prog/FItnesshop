@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes de Entrenamiento</title>
+  <!-- Importar Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f8fa;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: #fff;
+      height: 100vh;
+      border-right: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-family: Arial Black, sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .fitness {
+      color: #ff6600; /* Naranja */
+    }
+
+    .shop {
+      color: #000; /* Negro */
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 14px;
+      gap: 10px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .sidebar ul li i {
+      width: 20px;
+      text-align: center;
+    }
+
+    .sidebar ul li:hover,
+    .sidebar ul li.active {
+      background: #eaf2ff;
+      color: #2d6cdf;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logout {
+      background: none;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    /* Stats cards */
+    .stats {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .card {
+      flex: 1;
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .card.dark {
+      background: #1c2c4c;
+      color: #fff;
+    }
+
+    .card.orange {
+      background: #ffcc80;
+    }
+
+    .card.blue {
+      background: #e1f0ff;
+    }
+
+    .card.red {
+      background: #ffd6d6;
+    }
+
+    /* Table + notifications */
+    .content {
+      display: flex;
+      gap: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    table th, table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    .status {
+      padding: 5px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .activo {
+      background: #d4f8d4;
+      color: #2e7d32;
+    }
+
+    .inactivo {
+      background: #d9e8ff;
+      color: #1e40af;
+    }
+
+    .vencido {
+      background: #ffd6d6;
+      color: #b71c1c;
+    }
+
+    .notificaciones {
+      width: 250px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 15px;
+    }
+
+    .notificaciones h3 {
+      margin-top: 0;
+    }
+
+    .notificaciones div {
+      background: #f7f7f7;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2><span class="fitness">FITNES</span><span class="shop">SHOP</span></h2>
+    <ul>
+      <li>
+        <a href="Inicio.html"><i class="fa fa-home"></i> Inicio</a>
+      </li>
+      <li>
+        <a href="clientes.html"><i class="fa fa-users"></i> Clientes</a>
+      </li>
+      <li class="active">
+        <a href="#"><i class="fa fa-dumbbell"></i> Planes de entrenamiento</a>
+      </li>
+      <li>
+        <a href="productos.html"><i class="fa fa-box"></i> Productos</a>
+      </li>
+      <li>
+        <a href="Reservas.html"><i class="fa fa-book"></i> Reservas</a>
+      </li>
+      <li>
+        <a href="Reportes.html"><i class="fa fa-chart-line"></i> Reportes</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="header">
+      <h1>Planes de entrenamiento</h1>
+      <button class="logout">Log out</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="card dark">
+        <p>Total de planes</p>
+        <h2>120</h2>
+      </div>
+      <div class="card orange">
+        <p>Planes creados este mes</p>
+        <h2>8</h2>
+      </div>
+      <div class="card blue">
+        <p>Planes activos hoy</p>
+        <h2>22</h2>
+      </div>
+      <div class="card red">
+        <p>Planes vencidos</p>
+        <h2>5</h2>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Tabla -->
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre del plan</th>
+            <th>Entrenador</th>
+            <th>Nivel</th>
+            <th>Duración</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fuerza Avanzada</td>
+            <td>Carolina Gonzalez</td>
+            <td>Avanzado</td>
+            <td>12 semanas</td>
+            <td><span class="status activo">Activo</span></td>
+          </tr>
+          <tr>
+            <td>Pérdida de Grasa</td>
+            <td>David Herrera</td>
+            <td>Intermedio</td>
+            <td>8 semanas</td>
+            <td><span class="status inactivo">Inactivo</span></td>
+          </tr>
+          <tr>
+            <td>Principiante en Forma</td>
+            <td>Laura Castro</td>
+            <td>Principiante</td>
+            <td>10 semanas</td>
+            <td><span class="status activo">Activo</span></td>
+          </tr>
+          <tr>
+            <td>Potencia Muscular</td>
+            <td>Andrés Ruiz</td>
+            <td>Avanzado</td>
+            <td>6 semanas</td>
+            <td><span class="status vencido">Vencido</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Notificaciones -->
+      <div class="notificaciones">
+        <h3>Notificaciones</h3>
+        <div>Plan "Potencia Muscular" ha vencido</div>
+        <div>Nuevo plan "Pérdida de Grasa" creado</div>
+        <div>Plan "Fuerza Avanzada" marcado como activo</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

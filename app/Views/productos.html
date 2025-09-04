@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitnessShop - Productos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      background: #fff;
+      border-right: 1px solid #ddd;
+      padding: 20px 15px;
+      height: 100vh;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+    .logo .fitness {
+      color: #ff6600;
+    }
+    .logo .shop {
+      color: #000;
+    }
+    .sidebar ul {
+      list-style: none;
+    }
+    .sidebar ul li {
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      color: #333;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .sidebar ul li i {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+    .sidebar ul li.active,
+    .sidebar ul li:hover {
+      background: #eef4ff;
+      color: #2563eb;
+    }
+
+    /* Topbar */
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .topbar h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .logout {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .logout i {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+
+    /* Search */
+    .search-bar {
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .search-bar input {
+      border: none;
+      outline: none;
+      flex: 1;
+      font-size: 14px;
+    }
+    .search-bar i {
+      color: #666;
+    }
+
+    /* Productos */
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 15px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .product-card p {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .price {
+      background: #1613c9;
+      color: #fff;
+      padding: 5px 8px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 14px;
+      width: fit-content;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <span class="fitness">FITNES</span><span class="shop">SHOP</span>
+    </div>
+    <ul>
+       <li>
+  <a href="Inicio.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-home"></i> Inicio
+  </a>
+</li>
+       <li>
+  <a href="clientes.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-user"></i> Clientes
+  </a>
+</li>
+       <li>
+  <a href="Plan de entrenamiento.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-dumbbell"></i> Planes de entrenamiento
+  </a>
+</li>
+      <li class="active"><i class="fa fa-box"></i> Productos</li>
+              <li>
+  <a href="Reservas.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-book"></i> Reservas
+  </a>
+</li>
+          <li>
+  <a href="Reportes.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-chart-line"></i> Reportes
+  </a>
+</li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <!-- Topbar -->
+    <div class="topbar">
+      <h1>Productos</h1>
+      <div class="logout"><i class="fa fa-user-circle"></i> Log out</div>
+    </div>
+
+    <!-- Search -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <i class="fa fa-shopping-cart"></i>
+    </div>
+
+    <!-- Productos -->
+    <div class="section-title">Compras frecuentes</div>
+    <div class="products">
+      <div class="product-card">
+        <img src="C:\Users\andyn\Pictures\Screenshots\Captura de pantalla 2025-09-01 210312.png" alt="Producto">
+        <p>Mancuerna Hexagonal de Caucho Volfit de 15 lb</p>
+        <div class="price">Q190.00</div>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\andyn\Pictures\Screenshots\Captura de pantalla 2025-09-01 210339.png" alt="Producto">
+        <p>Mancuerna Hexagonal de Caucho Volfit de 25 lb</p>
+        <div class="price">Q290.00</div>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\andyn\Pictures\Screenshots\Captura de pantalla 2025-09-01 205831.png" alt="Producto">
+        <p>Mancuerna Hexagonal de Caucho Volfit de 30 lb</p>
+        <div class="price">Q375.00</div>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\andyn\Pictures\Screenshots\Captura de pantalla 2025-09-01 210200.png" alt="Producto">
+        <p>Mancuerna Hexagonal de Caucho Volfit de 18 lb</p>
+        <div class="price">Q300.00</div>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\andyn\Pictures\Screenshots\Captura de pantalla 2025-09-01 210416.png" alt="Producto">
+        <p>Mancuerna Hexagonal de Caucho Volfit de 20 lb</p>
+        <div class="price">Q525.00</div>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\andyn\Pictures\Screenshots\Captura de pantalla 2025-09-01 210451.png" alt="Producto">
+        <p>Mancuerna Hexagonal de Caucho Volfit de 35 lb</p>
+        <div class="price">Q450.00</div>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\andyn\Pictures\Screenshots\Captura de pantalla 2025-09-01 210524.png" alt="Producto">
+        <p>Yoga Mat Practical Fitness Negro 6 mm</p>
+        <div class="price">Q150.00</div>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\andyn\Pictures\Screenshots\Captura de pantalla 2025-09-01 210529.png" alt="Producto">
+        <p>Yoga Mat Profesional de Caucho Negro 5 mm</p>
+        <div class="price">Q150.00</div>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\andyn\Pictures\Screenshots\Captura de pantalla 2025-09-01 210622.png" alt="Producto">
+        <p>Pachón Azul</p>
+        <div class="price">Q250.00</div>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\andyn\Pictures\Screenshots\Captura de pantalla 2025-09-01 210631.png" alt="Producto">
+        <p>Pachón Rosa</p>
+        <div class="price">Q250.00</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

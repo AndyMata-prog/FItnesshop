@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reportes</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+    }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100vh;
+      background: #fff;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      padding: 20px 0;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #ff7b00;
+      margin-bottom: 30px;
+    }
+    .logo span {
+      color: #333;
+    }
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu li {
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      cursor: pointer;
+      color: #444;
+    }
+    .menu li:hover, .menu li.active {
+      background: #e9f1ff;
+      color: #007bff;
+      border-radius: 8px;
+    }
+    .menu li.active {
+      font-weight: bold;
+    }
+    .menu li i {
+      margin-right: 10px;
+      width: 18px;
+      text-align: center;
+    }
+    .content {
+      margin-left: 240px;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logout {
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+    }
+    h2 {
+      margin-top: 20px;
+      font-size: 28px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .search-bar {
+      margin-bottom: 15px;
+    }
+    .search-bar input {
+      width: 250px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table th, table td {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+    table th {
+      background: #f4f6f9;
+    }
+    .btn {
+      padding: 6px 12px;
+      border: 1px solid #007bff;
+      color: #007bff;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+      background: transparent;
+    }
+    .btn:hover {
+      background: #007bff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">FITNES<span>SHOP</span></div>
+    <ul class="menu">
+       <li>
+  <a href="Inicio.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-home"></i> inicio
+  </a>
+</li>
+        <li>
+  <a href="clientes.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-users"></i> Clientes
+  </a>
+</li>
+         <li>
+  <a href="Plan de entrenamiento.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-dumbbell"></i> Plan de entrenamiento
+  </a>
+</li>
+        <li>
+  <a href="productos.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-box"></i> Productos
+  </a>
+</li>
+      <li>
+  <a href="Reservas.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:10px;">
+    <i class="fa fa-book"></i> Reservas
+  </a>
+</li>
+      <li class="active"><i class="fa fa-chart-line"></i> Reportes</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="header">
+      <h2>Reportes</h2>
+      <div class="logout">Log out</div>
+    </div>
+
+    <div class="card">
+      <h3>Reportes</h3>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar reportes...">
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Reporte</th>
+            <th>Periodo</th>
+            <th>Creación</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>Ventas Productos</td>
+            <td>Mensual</td>
+            <td>31/10/2025</td>
+            <td><button class="btn">Ver</button></td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Boxeo</td>
+            <td>Mensual</td>
+            <td>28/11/2025</td>
+            <td><button class="btn">Ver</button></td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>Inventario Actual</td>
+            <td>Semanal</td>
+            <td>30/09/2025</td>
+            <td><button class="btn">Ver</button></td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>Renta actual</td>
+            <td>Trimestral</td>
+            <td>30/09/2025</td>
+            <td><button class="btn">Ver</button></td>
+          </tr>
+          <tr>
+            <td>005</td>
+            <td>Rendimiento Más Empleados</td>
+            <td>Trimestral</td>
+            <td>31/10/2025</td>
+            <td><button class="btn">Ver</button></td>
+          </tr>
+          <tr>
+            <td>006</td>
+            <td>Devoluciones</td>
+            <td>Anual</td>
+            <td>31/12/2024</td>
+            <td><button class="btn">Ver</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
