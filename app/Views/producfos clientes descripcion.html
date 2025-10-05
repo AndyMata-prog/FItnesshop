@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción del Producto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* --- Layout General --- */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        /* --- Sidebar --- */
+        .sidebar {
+            width: 220px;
+            background: #fff;
+            border-right: 1px solid #ddd;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar ul li a.active {
+            background: #eaf2ff;
+            padding: 8px;
+            border-radius: 6px;
+            color: #0056d2;
+        }
+
+        /* --- Contenido Principal --- */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .product-detail {
+            margin-top: 20px;
+        }
+
+        .product-detail p a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        /* --- Caja de producto --- */
+        .product-box {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            align-items: flex-start;
+        }
+
+        .product-image img {
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .product-info h2 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 5px 0 15px 0;
+        }
+
+        .buy-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .buy-section input {
+            width: 50px;
+            padding: 5px;
+        }
+
+        .btn-cart {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-cart:hover {
+            background: #0056d2;
+        }
+
+        .specs {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo"><span style="color: orange;">FITNESS</span>SHOP</h2>
+            <nav>
+                <ul>
+                    <li><a href="Inicio Clientes.html"><i class="fa fa-home"></i> Inicio</a></li>
+                    <li><a href="Plan de entrenamiento clientes.html"><i class="fa fa-dumbbell"></i> Planes de Entrenamiento</a></li>
+                    <li><a href="Productos clientes.html" class="active"><i class="fa fa-box"></i> Productos</a></li>
+                    <li><a href="Reservas cliente.html"><i class="fa fa-calendar"></i> Reservas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="content">
+            <header>
+                <h1><strong>Productos</strong></h1>
+                <div class="user-menu">
+                    <i class="fa fa-user-circle"></i> Log out
+                </div>
+            </header>
+
+            <section class="product-detail">
+                <p><a href="Productos clientes.html">Inicio / Productos</a> / Mancuerna Hexagonal de Caucho Volxfit de 20 lb</p>
+
+                <div class="product-box">
+                    <!-- Imagen -->
+                    <div class="product-image">
+                        <img src="https://walmartgt.vtexassets.com/arquivos/ids/441839/Mancuerna-Athletic-Works-De-Hule-20lb-2-42049.jpg?v=638399577687330000.jpg" alt="Mancuerna 20 lb">
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="product-info">
+                        <h2>Mancuerna Hexagonal de Caucho Volxfit de 20lb</h2>
+                        <p class="price">Q300.00</p>
+                        <p>Mancuernas para uso personal y comercial en gimnasios profesionales por la calidad y durabilidad de sus materiales</p>
+                        <p><strong>10 disponibles</strong></p>
+
+                        <div class="buy-section">
+                            <input type="number" value="1" min="1" max="10">
+                            <button class="btn-cart"><i class="fa fa-cart-plus"></i> Añadir al carrito</button>
+                        </div>
+
+                        <div class="specs">
+                            <p>Mancuernas hexagonales de hierro fundido y cobertura de caucho para proteger las superficies.</p>
+                            <p>Cuentan con agarre ergonómico texturizado cromado.</p>
+                            <p>Construcción integrada que garantiza que el cabezal no se suelte.</p>
+                            <p>Precio por unidad.</p>
+                            <p><strong>ESPECIFICACIONES:</strong></p>
+                            <p>Material: hierro con recubrimiento de caucho.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
